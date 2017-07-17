@@ -1,0 +1,272 @@
+@import 'normalize.styl'
+// @import 'fonts.styl'
+
+
+body
+	margin 0
+	padding 0
+	
+
+a
+	text-decoration none
+	font-family sans-serif
+	font-weight 100
+	
+	
+li
+	list-style none
+
+
+::-webkit-scrollbar
+	width 8px
+	background #777
+	
+
+::-webkit-scrollbar-thumb
+	border-radius 10px
+	background #555
+	
+	
+::-webkit-scrollbar-track
+	// border-radius 10px
+	background #fff
+	box-shadow inset 0 0 6px rgba(0,0,0,.4)
+	
+
+.frontend
+	position relative
+	text-align center
+	
+
+.container
+	padding-right 15px
+	padding-left 15px
+	margin-right auto
+	margin-left auto
+	
+
+.container-wide
+	position relative
+	padding 0
+	text-align center
+
+.rw
+	position relative
+	
+
+.cl
+	position relative
+	
+
+
+//navegation and menus	
+.btn-menu
+	position absolute
+	top 15px
+	right 15px
+	font-size 45px
+	color #777
+	z-index 6
+
+.head-menu
+	position relative
+	height 50px
+	padding-top 10px
+	padding-bottom 10px
+	
+	
+.vert-menu
+	background rgba(0,0,0,.8)
+	position fixed
+	top 0
+	bottom 0
+	transition all .3s
+	left 0px
+	width 200px
+	z-index 5
+	
+
+.list-menu
+	font-size 18px
+	padding-left 0
+
+
+.item-menu
+	margin 0 auto
+	padding 10px 0 10px 0
+	text-align center	
+	
+
+// letters and fonts
+
+.title
+	width auto
+	margin 0 auto
+	text-align center
+	font-size 22px
+	font-family sans-serif
+	font-weight 100
+
+
+.text
+	font-size 18px
+	font-family sans-serif
+	font-weight 100
+	
+// images
+figure
+	position relative
+	margin-left 0
+	margin 0 auto
+	left 0px
+	right 0px
+	img
+		width 100%
+		height 100%
+		
+
+	
+// foms and inputs
+.form
+	width 100%
+	margin 0 auto
+	text-align center
+
+
+.form-group
+	padding-bottom 18px
+
+
+.form-inp
+	width 100%
+	outline none
+	&.:focus
+		border none
+		
+
+textarea 
+	width 98%		
+
+
+.form-btn
+	width 200px
+	margin 0 auto
+	text-align center
+	height 32px
+	border none
+	border-radius 4px
+	
+		
+.no-border
+	border none
+	
+
+.border-bottom 
+	border-bottom 1px solid #cdc8c8
+	
+
+//table
+.table
+	// background #3a3e52
+	position relative
+	color #888
+	border-collapse collapse 
+	width 100%
+
+// tbody tr, thead tr
+// 	background #3a3e52
+// 	border-bottom 10px solid #2b2d3c
+// 	border-left 3px solid #1d6554
+		
+	
+tbody tr:nth-child(2) 
+	border-left 3px solid #0084be
+	
+th
+	height 45px
+	font-size 18px
+	font-weight 500
+	display block
+	
+
+td
+	position relative
+	color #777
+	font-size 16px
+	height 45px
+	display block
+
+
+@media screen and (min-width 768px)
+	.btn-menu
+		display none
+		
+	.horiz-menu
+		position absolute
+		right 15px
+		top 0
+		left inherit
+		bottom initial
+		width 350px
+		
+		
+	.head-bottom
+		position absolute
+		width 100%
+		bottom 0px
+		
+		
+	.horiz-item
+		display inline-block
+		vertical-align top
+		padding 10px
+		margin -2px
+	
+
+	.container
+		padding-left 60px
+		padding-right 60px
+
+
+	.cl
+		width 50%
+		margin -2px
+		display inline-block
+		vertical-align top
+		
+
+@media screen and (min-width 992px)
+	
+	.container
+		padding-left 65px
+		padding-right 65px
+	
+
+	.cl
+		width 30%
+
+	thead tr
+		background none
+		border-bottom none
+		border-left none
+	
+	th, td
+		display table-cell
+	
+
+
+@media screen and (min-width 1200px)
+	.frontend
+		height 100vh
+
+
+	.container
+		padding-left 65px
+		padding-right 65px
+	
+
+	.cl
+		width 25%
+		
+
+// 
